@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div id="myForm" class="chatbotparent">
+      <div class="chatbotchild">
+        <div class="chatbot">
+          <div class="chatbotUpper" id="div12">
+            <div class="heading" id="div13" style="visibility: hidden">
+              <div class="iris">IRIS</div>
+              <div class="hello">Hello 👋</div>
+              <div class="intro">I am Iris, a Virtual Assistant</div>
+              <div class="help">How may I help you?</div>
+            </div>
+          </div>
+
+          <div class="chatbotLower">
+            <div class="faq_section" id="div14" style="visibility: hidden">
+              <div class="icon" id="bitIcon" style="visibility: hidden">
+                <i class="bi bi-robot"></i>
+              </div>
+              <div class="faq_section_content">
+                <div class="faq">
+                  Frequently Asked Questions <span class="questionMark">?</span>
+                </div>
+                <div id="div1" class="faqbox" style="visibility: hidden">
+                  <span class="dot"></span>
+                  Can I reedem FB before the original term?
+                </div>
+                <div id="div2" class="faqbox" style="visibility: hidden">
+                  <span class="dot"></span>
+                  How do I pay my Credit card bill?
+                </div>
+                <div id="div3" class="faqbox" style="visibility: hidden">
+                  <span class="dot"></span>
+                  How can I get my Account Statement?
+                </div>
+                <div id="div4" class="faqbox" style="visibility: hidden">
+                  <span class="dot"></span>
+                  What is the tenure of Fixed Deposit?
+                </div>
+                <div class="chat" id="div5" style="visibility: hidden">
+                  <div class="chatContent">
+                    <span>
+                      <i class="bi bi-chat-left-text"></i>
+                    </span>
+                    <span> Start a New Conversation </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chaticon" onClick="openForm()">Live Chat</div>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("div1").style.visibility = "visible";
+        }, 8000);
+        setTimeout(() => {
+          document.getElementById("div2").style.visibility = "visible";
+        }, 10000);
+        setTimeout(() => {
+          document.getElementById("div3").style.visibility = "visible";
+        }, 12000);
+        setTimeout(() => {
+          document.getElementById("div4").style.visibility = "visible";
+        }, 14000);
+        setTimeout(() => {
+          document.getElementById("div5").style.visibility = "visible";
+        }, 16000);
+        setTimeout(() => {
+          document.getElementById("div12").style.visibility = "visible";
+        }, 2000);
+        setTimeout(() => {
+          document.getElementById("div13").style.visibility = "visible";
+        }, 4000);
+        setTimeout(() => {
+          document.getElementById("div14").style.visibility = "visible";
+        }, 6000);
+        setTimeout(() => {
+          document.getElementById("bitIcon").style.visibility = "visible";
+        }, 4000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.chatbotparent {
+  position: relative;
+}
+
+.chatbotchild {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.chatbot {
+  height: 480px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 0.5px #b9b9b9;
+  position: relative;
+}
+
+.chatbotUpper {
+  padding: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 115, 0),
+    rgb(255, 139, 44)
+  );
+  visibility: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.heading {
+  margin: 5px 0 0 20px;
+  color: white;
+  /* height: 22vh; */
+  height: 200px;
+}
+
+.iris {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hello {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.intro {
+  font-size: 14px;
+}
+
+.help {
+  font-size: 14px;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 115, 0);
+  /* box-shadow: 1px 1px 2px 0px rgb(255, 140, 47); */
+  position: relative;
+  /* margin: 15px 0; */
+  top: -43px;
+  color: white;
+}
+
+.bi-robot {
+  font-size: 32px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.chatbotLower {
+  position: absolute;
+  /* top: 20vh; */
+  top: 150px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.faq_section {
+  width: 94%;
+  margin: 0 auto;
+  height: 300px;
+  box-shadow: 1px 0px 4px 0px #b9b9b9;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq_section_content {
+  position: relative;
+  top: -25px;
+}
+
+.faq {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(91, 91, 91);
+}
+
+.questionMark {
+  color: rgb(255, 115, 0);
+  font-weight: 800;
+  background-color: rgb(255, 233, 215);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0.5px 0.5px #b9b9b9;
+  font-size: 14px;
+}
+
+.faqbox {
+  font-size: 10px;
+  box-shadow: 1px 0px 4px 0px #b9b9b9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: rgb(91, 91, 91);
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.bi-dot {
+  color: rgb(255, 115, 0);
+}
+
+.chat {
+  font-size: 12px;
+  box-shadow: 1px 1px 4px 0.5px #b9b9b9;
+  padding: 10px;
+  border-radius: 20px;
+  /* width: 70%; */
+  width: 70%;
+  margin: 20px auto;
+}
+
+.chatContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat span {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(91, 91, 91);
+}
+
+.dot {
+  font-weight: 800;
+  background-color: rgb(255, 115, 0);
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0.5px 0.5px #b9b9b9;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .chatbotparent {
+    position: static;
+  }
+
+  .chatbotchild {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 10%);
+  }
+  .chatbot {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .chatbotparent {
+    position: static;
+  }
+
+  .chatbotchild {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 10%);
+  }
+  .chatbot {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .chatbot {
+    height: 490px;
+  }
+  .faq_section {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .chatbotparent {
+    position: static;
+  }
+
+  .chatbotchild {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 10%);
+  }
+  .chatbot {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .chatbot {
+    height: 530px;
+  }
+  .faq_section {
+    height: 360px;
+  }
+}
+
+#myForm {
+  display: none;
+}
+
+.chaticon {
+  background-color: rgb(255, 115, 0);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
+  width: 250px;
+  text-align: center;
+}
